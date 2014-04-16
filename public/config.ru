@@ -2,7 +2,7 @@ require 'rack/rewrite'
 
 use Rack::Static,
   :urls => ["/img"],
-  :root => "./"
+  :root => "public"
 
 run lambda { |env|
   [

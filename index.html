@@ -1,4 +1,20 @@
 
+<!-- 
+
+|_   __ \   |_   __  ||_   \  /   _||_   __  ||_   \  /   _||_   _ \ |_   __  ||_   __ \    
+  | |__) |    | |_ \_|  |   \/   |    | |_ \_|  |   \/   |    | |_) |  | |_ \_|  | |__) |   
+  |  __ /     |  _| _   | |\  /| |    |  _| _   | |\  /| |    |  __'.  |  _| _   |  __ /    
+ _| |  \ \_  _| |__/ | _| |_\/_| |_  _| |__/ | _| |_\/_| |_  _| |__) |_| |__/ | _| |  \ \_  
+|____|_|___||________||_____||_____||________||_____||_____||_______/|________||____| |___| 
+ |_   _|   |_   __  ||_   \|_   _||_   \|_   _||_  _||_  _|                                 
+   | |       | |_ \_|  |   \ | |    |   \ | |    \ \  / /                                   
+   | |   _   |  _| _   | |\ \| |    | |\ \| |     \ \/ /                                    
+  _| |__/ | _| |__/ | _| |_\   |_  _| |_\   |_    _|  |_                                    
+ |________||________||_____|\____||_____|\____|  |______|                                   
+                                                               
+
+ -->
+
 <head>
     <title>How did the event go?</title>
     <meta name="description" content="Metrics for success">
@@ -24,7 +40,7 @@
             text-align: center;
             margin-top: 5%;
             }
-        a {
+        a.button {
             width: 200px;
             font: small sans-serif;
             text-decoration: none;
@@ -33,7 +49,7 @@
             padding: .3em 1em;
             color: #48433d;
             }
-        a:hover {
+        a.button:hover {
             color: grey;
             }
         a#yes {
@@ -48,16 +64,26 @@
         a#no:hover {
             background: #b4e123;
             }
+        .tweet-link{
+            width: auto;
+            background: none;
+            font: small Baskerville, Georgia, serif;
+            color: #48433d;
+            }
+        .byline{
+            text-align: center;
+            margin-top: 70%;
+        }
     </style>
 </head>
 <body>
     <div id="wrapper">
         <h1 id="message">Did anyone die?</h1>
         <div id="answers">
-            <a href="#" id="no">No</a>
-            <a href="#" id="yes">Yes</a>
+            <a href="#" class="button" id="no">No</a>
+            <a href="#" class="button" id="yes">Yes</a>
         </div>
-        <p style="margin-top: 20%;">Made with Δ from <a href="http://twitter.com/rememberlenny">Leonard K. Bogdonoff</a>a></p>
+        <p class="byline">Made by <a class="tweet-link" href="http://twitter.com/rememberlenny">Leonard K. Bogdonoff</a></p>
     </div>
 </body>
 <script>
